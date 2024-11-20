@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamaleón Publicidad</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" href="img/1000112861.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="loading-screen">
+        <img src="img/1000112861.png" alt="Kamaleon Publicidad">
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="/img/1000112861.png" alt="Kamaleón" style="width: 70px; height: 70px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quienessomos">¿Quiénes Somos?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#misionvision">Misión y Visión</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="carrusel" class="mt-4">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/banner1.jpg" class="imgg" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner2.png" class="imgg" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner3.jpeg" class="imgg" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <br>
+
+    <div class="container grid-container">
+        <h2>Galería</h2>
+        <div class="row">
+            <div class="col-4 grid-item">
+                <img src="img/img1.jpg" class="img-fluid" alt="Imagen 1" onclick="openImageModal('img/img1.jpg')" />
+            </div>
+            <div class="col-4 grid-item">
+                <img src="img/img2.jpg" class="img-fluid" alt="Imagen 2" onclick="openImageModal('img/img2.jpg')" />
+            </div>
+            <div class="col-4 grid-item">
+                <img src="img/img3.jpg" class="img-fluid" alt="Imagen 3" onclick="openImageModal('img/img3.jpg')" />
+            </div>
+            <div class="col-4 grid-item">
+                <img src="img/img4.jpg" class="img-fluid" alt="Imagen 4" onclick="openImageModal('img/img4.jpg')" />
+            </div>
+            <div class="col-4 grid-item">
+                <img src="img/img5.jpg" class="img-fluid" alt="Imagen 5" onclick="openImageModal('img/img5.jpg')" />
+            </div>
+            <div class="col-4 grid-item">
+                <img src="img/img6.jpg" class="img-fluid" alt="Imagen 6" onclick="openImageModal('img/img6.jpg')" />
+            </div>
+            <div class="col-4 grid-item">
+                <img src="img/img7.jpg" class="img-fluid" alt="Imagen 7" onclick="openImageModal('img/img7.jpg')" />
+            </div>
+            <div class="col-4 grid-item">
+                <img src="img/img11.jpg" class="img-fluid" alt="Imagen 8" onclick="openImageModal('img/img8.jpg')" />
+            </div>
+            <div class="col-4 grid-item">
+                <img src="img/img9.jpg" class="img-fluid" alt="Imagen 9" onclick="openImageModal('img/img9.jpg')" />
+            </div>
+        </div>
+    </div>
+
+    <section id="servicios" class="container mt-5">
+        <h2 class="text-center">Nuestros Servicios</h2>
+        <p class="tamaño text-center mb-4">En Kamaleon Publicidad, ofrecemos soluciones creativas y personalizadas para
+            cubrir todas tus necesidades publicitarias. ¡Conoce nuestros servicios y lleva tu marca al siguiente nivel!
+        </p>
+
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="service-card">
+                    <h3>Impresión Digital</h3>
+                    <p>Soluciones de alta calidad para cualquier tipo de material.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <h3>Termos Personalizados</h3>
+                    <p>Personalización de termos para mantener tus bebidas a la temperatura ideal.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <h3>Serigrafía</h3>
+                    <p>Técnicas de impresión para diseños vibrantes en diversas superficies.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row text-center mt-4">
+            <div class="col-md-4">
+                <div class="service-card">
+                    <h3>Lonas y Toldos</h3>
+                    <p>Ideal para publicidad exterior y eventos.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <h3>Sublimación y Transfer</h3>
+                    <p>Perfectos para textiles y productos promocionales.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <h3>Anuncios Luminosos</h3>
+                    <p>Captura la atención con nuestros anuncios iluminados.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <p class="tamaño text-center mb-4">¡Y mucho más! Kamaleon Publicidad está aquí para ayudarte a destacar con
+                productos personalizados y de calidad.</p>
+        </div>
+    </section>
+
+
+    <section id="quienessomos" class="container mt-5">
+        <h2>¿Quiénes Somos?</h2>
+        <p class="tamaño">Kamaleon Publicidad es una empresa dedicada a la publicidad y personalización, que se
+            especializa en ofrecer una amplia variedad de productos diseñados para satisfacer las necesidades de sus
+            clientes. Desde sus inicios como un pequeño negocio que imprimía tazas y calcomanías, ha evolucionado para
+            incluir Anuncios Luminosos, Lonas y Rotulación Vehicular.</p>
+        <p class="tamaño">Con un enfoque en la creatividad y la innovación, Kamaleon Publicidad se compromete a
+            proporcionar soluciones personalizadas que no solo cumplen, sino que superan las expectativas de sus
+            clientes. Su misión es ser un aliado estratégico en el crecimiento y la visibilidad de las marcas,
+            ofreciendo productos únicos que destacan en el mercado.</p>
+    </section>
+
+    <section id="misionvision" class="container mt-5">
+        <h2>Misión y Visión</h2>
+        <p class="tamaño">Proporcionar soluciones creativas e innovadoras que satisfagan todas las necesidades de
+            personalización y publicidad de los clientes. Kamaleon Publicidad se especializa en fabricar productos
+            impresos y promocionales de alta calidad. Comprometerse a ofrecer un servicio personalizado, eficiente y
+            adaptado a las necesidades de cada cliente, garantizando excelencia en cada proyecto.</p>
+        <p class="tamaño">Consolidarse como un referente líder en la industria de la
+            publicidad y personalización en México. Busca destacar por su innovación, calidad y variedad de servicios,
+            aspirando a convertirse en el aliado estratégico de empresas y particulares al ofrecer productos únicos y
+            personalizados que permitan a sus clientes sobresalir y alcanzar sus metas promocionales.</p>
+    </section>
+
+    <section id="ubicacion" class="container mt-5">
+        <h2>Ubicación</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.123456789012!2d-98.123456789012!3d22.123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1234567890123456!2sGuillermo%20Prieto%20305%2C%20Benito%20Ju%C3%A1rez%2C%2089840%20Cd.%20Mante%2C%20Tamps.!5e0!3m2!1ses!2smx!4v1234567890123"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" id="ubicacion">
+        </iframe>
+    </section>
+
+    <section id="contacto" class="container mt-5 text-center">
+        <h2>Contacto</h2>
+        <div class="social-media mt-4">
+            <h3 class="h3-reducido">Contactanos en:</h3>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100063691896301&mibextid=ZbWKwL"
+                        target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/kamaleon_publicidad?igsh=dWc3dTNwbzg5bXNx"
+                        target="_blank">Instagram</a>
+                </li>
+                <li>
+                    <a href="https://wa.me/8311151246" target="_blank">WhatsApp</a>
+                </li>
+                <li>
+                    <a href="https://mail.google.com/mail/u/0/#search/DGkamaleonpublicidad%40gmail.com">Email</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="text-white text-center py-3 mt-5">
+        <p>© 2024 Kamaleón Publicidad. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
