@@ -5,12 +5,17 @@ window.addEventListener('load', function () {
 });
 
 function openImageModal(imageSrc) {
+    const existingModal = document.getElementById("imageModal");
+    if (existingModal) {
+        existingModal.remove();
+    }
+
     const modalHtml = `
         <div class="modal fade" id="imageModal" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <img src="${imageSrc}" alt="Imagen Ampliada" />
+                        <img src="${imageSrc}" alt="Imagen Ampliada" class="img-fluid" />
                     </div>
                 </div>
             </div>
